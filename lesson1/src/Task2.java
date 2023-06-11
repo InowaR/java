@@ -1,6 +1,6 @@
 // 2) Вывести все простые числа от 1 до 1000
 
-package lesson1;
+package lesson1.src;
 import java.util.Scanner;
 import java.io.*;
 

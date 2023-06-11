@@ -4,7 +4,7 @@
 // Знаки вопроса - одинаковые цифры.
 // Предложить хотя бы одно решение или сообщить, что его нет.
 
-package lesson1;
+package lesson1.src;
 public class Task4 {
     public static void main(String[] args) {
         boolean flag = false;
