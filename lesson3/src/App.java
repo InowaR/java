@@ -53,10 +53,38 @@ public class App {
         System.out.println(min);
     }
 
+    public static void find_max(List<Integer> array) {
+        List<Integer> new_arr = array;
+        Iterator<Integer> itr = new_arr.iterator();
+        int max = itr.next();
+        while(itr.hasNext()) {
+            int i = itr.next();
+            if(i > max) {
+                max = i;
+            }
+        }
+        System.out.println(max);
+    }
+
+    public static void mean(List<Integer> array) {
+        List<Integer> new_arr = array;
+        Iterator<Integer> itr = new_arr.iterator();
+        int sum = 0;
+        int len = 0;
+        while(itr.hasNext()) {
+            int i = itr.next();
+            sum += i;
+            len++;
+        }
+        System.out.println(sum/len);
+    }
+
     public static void main(String[] args) throws Exception {
         List<Integer> array = create_array(10);
         print_array(array);
         delete_even_numbers(array);
         find_min(array);
+        find_max(array);
+        mean(array);
     }
 }
