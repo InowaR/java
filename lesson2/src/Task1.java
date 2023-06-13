@@ -6,7 +6,6 @@
 // Ввод данных: {"name":"Ivanov", "country":"Russia", "city":"Moscow", "age":"null"}
 // вывод: select * from students WHERE name=Ivanov AND country=Russia AND city=Moscow
 
-package lesson2.src;
 public class Task1 {
 
     public static void split() {
