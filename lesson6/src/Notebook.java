@@ -32,4 +32,9 @@ public class Notebook {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "model: " + model + ",\nmanufacturer: " + manufacturer + ",\nprice: " + price;
+    }
 }
