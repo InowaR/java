@@ -35,6 +35,6 @@ public class Notebook {
 
     @Override
     public String toString() {
-        return "model: " + model + ",\nmanufacturer: " + manufacturer + ",\nprice: " + price;
+        return model + "\t\t" + manufacturer + "\t\t" + price;
     }
 }
