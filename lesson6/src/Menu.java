@@ -37,4 +37,22 @@ public class Menu {
             }
         });
     }
+
+    public void sortByAscendingManufacturer(List<Notebook> notebooks) {
+        Collections.sort(notebooks, new Comparator<Notebook>() {
+            @Override
+            public int compare(Notebook notebook1, Notebook notebook2) {
+                return notebook1.getManufacturer().compareTo(notebook2.getManufacturer());
+            }
+        });
+    }
+
+    public void sortByDescendingManufacturer(List<Notebook> notebooks) {
+        Collections.sort(notebooks, new Comparator<Notebook>() {
+            @Override
+            public int compare(Notebook notebook1, Notebook notebook2) {
+                return notebook2.getManufacturer().compareTo(notebook1.getManufacturer());
+            }
+        });
+    }
 }
